@@ -1,0 +1,539 @@
+/*
+	CSS design Orbite.sarl
+	Â© Untitled. All rights reserved. Design: Orbite
+*/
+html {
+  scroll-behavior: smooth;
+}
+@font-face{
+	font-family: davina;
+	src : url(../../assets/font/DAVINA.ttf);
+}
+@font-face{
+	font-family: ralewayMedium;
+	src : url(../../assets/font/Raleway-Medium.ttf);
+}
+
+*{
+    transition : all .30s;
+}
+
+body,html,#wrapper{
+    margin : 0;
+    padding : 0;
+    font-family: ralewayMedium;
+}
+
+#wrapper{
+   overflow : hidden;
+}
+
+
+#btn_up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; 
+  border: none; 
+  outline: none;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer; 
+  padding: 15px;
+  font-size: 18px;
+}
+
+#btn_up:hover {
+  opacity: 1;
+}
+
+/*---------------*
+*-----Header-----*
+*---------------*/
+#container-header{
+    display : inline-block;
+    width : 100%;
+    margin : 0;
+}
+
+header{
+    display : inline-block;
+    width : 100%;
+    height : 70px;
+    box-shadow :  0 0  10px 2px gray;
+}
+
+#header-logo{
+    display : inline-block;
+    font-family : davina;
+    font-size : 3em;
+    color : #607D8B;
+    height : 95%;
+    padding : 10px 0 2px 0;
+    margin : 0 0 0 0%;
+}
+
+#header-logo img{
+    margin : -20px 0px 0px 10px;
+    height : 100%;
+}
+
+#header-logo strong{
+	vertical-align : top;
+	display : inline-block;
+	margin : -7px 0 0 10px;
+}
+
+.dropdown{
+	float : right;
+	list-style : none;
+	margin : 0 10% 0 0;
+	display : inline-block;
+	width : 130px;
+	text-align : center;
+}
+
+.dropdown>a{
+	color : black;
+	padding : 25px 0px;
+	display : inline-block;
+	margin : 0;
+	width : 100%;
+}
+
+.dropdown a:hover{
+    background : rgba(0,0,0,0.06);
+}
+
+.dropdown a:focus{
+    background : rgba(0,0,0,0.1);
+}
+
+.dropdown-menu a{
+	width: 100%;
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	padding: 7px;
+}
+
+.dropdown-responsive{
+  	margin : 0px 0 0px 0;
+    padding : 0px 0px;
+    font-size : 1.2em;
+    width : 100%;
+    list-style : none;
+    background : #37474F;
+    display : none;
+    overflow : hidden;
+}
+
+.dropdown-menu-responsive{
+	display : inline-block;
+	margin : 0;
+	padding : 0px;
+	width : 100%;
+}
+
+.dropdown-responsive a{
+    color : azure;
+    padding : 5px 0 5px 10px;
+    width : 100%;
+    display : inline-block;
+}
+
+.dropdown-responsive li{
+    list-style : none;
+    padding : 0px 0%;
+    padding-left : 40px;
+    margin : 0 0 0 -30px;
+}
+
+.dropdown-responsive li:hover{
+    background : #37474F;
+    padding-left : 60px;
+}
+
+.dropdown-menu-responsive{
+	background : #455A64;
+}
+
+/*---------------*
+*------Main------*
+*---------------*/
+main{
+    padding : 0 10%;
+}
+
+main #title{
+    text-align : center;
+    font-size: 4.5em;
+    width : 100%;
+    display : inline-block;
+    margin : 30px 0; 
+    color : #607D8B;
+    font-weight: 700;
+    font-family: davina;
+}
+
+.heading-underline{
+	width: 10rem;
+	height: .4rem;
+	background-color: #607D8B;
+	margin: -1rem auto 3rem;
+}
+
+
+#container-btn{
+    display : inline-block;
+    text-align : center;
+    width : 100%;
+    margin : 0 0 50px 0;
+}
+
+.btn{
+    background : #607D8B;
+    padding : 10px 20px;
+    color : azure;
+    border-radius : 4px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background : #455A64;
+    color : azure;
+}
+
+#container-quality{
+    padding : 50px 0;
+    margin : 30px 0;
+    border-top : 1px solid rgb(96, 125, 139);
+    border-bottom : 1px solid rgb(96, 125, 139);
+}
+
+.sub-title{
+    margin : 10px 0;
+    text-align : center;
+    display : inline-block;
+    width : 100%;
+    font-size : 1.5em;
+    color : #455A64;
+}
+
+#container-quality .sub-title{
+    margin : 0;
+    color : rgb(96, 125, 139);
+}
+
+.sub-title+p{
+    text-align : justify;
+}
+
+#container-banner{
+    width : 100%;
+    height : 280px;
+    overflow : hidden;
+    margin : 10px 0;
+    position : relative;
+}
+
+#banner{
+    width : 100%;
+    height : 100%;
+}
+
+#banner img{
+    margin : -18% 0 0 0;
+    width : 100%;
+    vertical-align : bottom;
+}
+
+#container-banner span{
+    background : rgba(0, 0, 0, 0.5);
+    text-align : center;
+    font-size : 1.5em;
+    position : absolute; 
+    width : 100%;
+    padding : 5% 0; 
+    margin : -200px 0 0 0;
+}
+
+#container-banner span a{
+    color: azure;
+}
+
+/*---------------*
+*---Information--*
+*------page------*
+*---------------*/
+#container-present-info{
+	margin : 30px 10% ;
+	padding : 10px 20px;
+	box-shadow : 0 2px 10px 2px  gray;
+	font-size : 1.15em;
+}
+
+#container-present-info p{
+	text-align : justify; 
+}
+
+/*---------------*
+*--contact page--*
+*---------------*/
+#container-present-info li{
+	list-style : none;
+}
+
+#container-send-message{
+	margin : 50px 23% ;
+	padding : 10px;
+	font-size : 1.4em;
+	box-shadow : 0 0px 10px 2px  gray;
+}
+
+#container-send-message *{
+	width : 100%;
+	margin : 2px 0 0 0;
+}
+
+#container-send-message label{
+	width : 100%;
+	display : inline-block;
+}
+
+#container-send-message textarea{
+	height : 150px;
+}
+
+#container-img-reseaux{
+	display : inline-block;
+	text-align : center;
+}
+
+#container-img-reseaux a{
+	background : white;
+}
+
+#container-img-reseaux img{
+	 width : 50px;
+	 height : 50px;
+	 background : white;
+	 display : inline-block;
+	 margin : 5px 10px;
+
+}
+
+/*---------------*
+*-----Footer-----*
+*---------------*/
+footer{
+    background: #37474F;
+    color : azure;
+    width : 100%;
+}
+
+footer div{
+    display : inline-block;
+    vertical-align : top;
+    padding : 0 0 0 2%;
+}
+
+footer .carousel-item{
+	height: 40vh;
+	width: 62vh;
+}
+
+footer .carousel-item img{
+	width: 100%;
+}
+
+footer .carousel-caption{
+	background-color: rgba(0,0,0,0.7);
+}
+
+footer .sub-title{
+   font-size : 1.5em;
+   color : azure;
+}
+
+footer .sub-footer{
+	background: #26363e;
+}
+
+footer .heading-underline{
+	background: azure;
+}
+
+.sf-subLink a{
+	opacity: 0.7;
+	color: azure;
+}
+.sf-subLink img{
+	height: 200px;
+}
+.sf-subLink a:hover{
+	opacity: 1;
+	color: white;
+	text-decoration: none;
+}
+
+#copyright{
+	background : #263238;
+	color : azure;
+	text-align : center;
+	width : 100%;
+	margin :0 0 0px ;
+	padding : 10px 0 0 0;
+	display : inline-block;
+}
+
+#copyright ul{
+	margin : 0 0 10px -45px;
+}
+
+#copyright li{
+	list-style : none;
+	display : inline-block;
+}
+
+#copyright a{
+	color : #9c9c9c;
+}
+
+#no-resposive{
+	display : none;
+}
+
+/*---------------*
+*---Responsive---*
+*--design:680px--*
+*---------------*/
+@media all and (max-width: 680px){
+
+	header{
+    	box-shadow :  0 0 0 0;
+	}
+
+	#header-logo{
+    font-size : 3.5em;
+    margin-top : 9px;
+}
+
+	.dropdown{
+    	display : none;
+	}
+	
+	.dropdown-responsive{
+    	display : inline-block;
+    	margin : 0;
+	}
+
+	main #title{
+		font-size: 3em;
+		margin : 20px 0;
+	}
+
+	#container-quality{
+		padding : 30px 0;
+		margin : 10px 0;	
+	}
+
+	#container-quality div{
+		width : 100%;
+	}
+
+	#container-quality img{
+		width : 30%;
+	}
+
+	#container-banner{
+		height : 200px;
+	}
+
+	#banner img{
+		margin : 0;
+		width : 100%;
+		height : 100%; 
+	}
+
+	#container-banner span{
+		margin : -130px 0 0 0;
+	}
+
+	#container-present-info{
+		margin : 20px 0% ;
+		padding : 5px 10px;
+	}
+
+	#container-present-info li{
+		margin : 0 0 0 -8%;
+	}
+
+	#container-send-message{
+		margin : 20px 0% ;
+		padding : 5px;
+		font-size : 1.2em;
+		box-shadow : 0 0px 10px 2px  gray;
+	}
+
+	#container-send-message *{
+		width : 100%;
+		margin : 2px 0 0 0;
+	}
+
+	#container-send-message label{
+		width : 100%;
+		display : inline-block;
+	}
+
+	#container-send-message textarea{
+		height : 150px;
+	}
+
+	#container-img-reseaux{
+		display : inline-block;
+		text-align : center;
+	}
+
+	footer{
+		margin : 20px 0 0 0;
+		padding :0px 0 0px 0;
+	}
+
+	footer div{
+		padding : 0 0 0 1%;
+	}
+
+	footer .sub-title{
+	   font-size : 1.4em;
+	   padding : 0 0 0 5px;
+	}
+
+	footer #indication{
+		width : 58%;
+	}
+
+	footer div+div{
+	   width : 40%;
+	}
+
+	footer div+div div{
+	   height : 40px;
+	}
+
+	footer div+div img{
+	   height : 100%;
+	}
+}
+
+/*---------------*
+*---Responsive---*
+*--design:405px--*
+*---------------*/
+@media all and (max-width: 405px){
+	#header-logo{
+		font-size : 2.05em;
+		margin-top : 26px;
+	}
+}

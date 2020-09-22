@@ -1,0 +1,65 @@
+/*=================================*/
+/*===== Theme Ministère santé =====*/
+/*=================================*/
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	overflow-x: hidden;
+	font-family: 'Loto', sans-serif;
+}
+
+
+#btn_up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; 
+  border: none; 
+  outline: none;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer; 
+  padding: 15px;
+  font-size: 18px;
+}
+
+#btn_up:hover {
+  opacity: 1;
+}
+
+.network{
+	font-size: 30px; 
+	right: 0; 
+	top: 0.5vh;
+}
+
+.equipe-technique a{
+	text-decoration: none;
+}
+
+.equipe-technique img{
+	height: 50px;
+	width: 50px;
+}
+
+.equipe-technique sub{
+	margin-top: -10px;
+}
+
+@media (max-width: 992px){
+	.img-banner{
+		padding-top: 8vh;
+	}
+}
+
+@media (max-width: 767px){
+	.img-banner{
+		padding-top: 20vh;
+	}
+	.sub-text-banner{
+		padding-top: 0;
+	}
+}

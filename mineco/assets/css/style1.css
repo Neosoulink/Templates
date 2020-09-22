@@ -1,0 +1,199 @@
+/*=================================*/
+/*===== Theme Ministère santé =====*/
+/*=================================*/
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	overflow-x: hidden;
+	color: #505962;
+	font-family: "Roboto",'Loto', sans-serif;
+}
+
+
+#btn_up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; 
+  border: none; 
+  outline: none;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer; 
+  padding: 15px;
+  font-size: 18px;
+}
+
+#btn_up:hover {
+  opacity: 1;
+}
+
+.cont-logo a{
+	color: black;
+	text-decoration: none;
+}
+.cont-logo img{
+	height: 70px;
+	vertical-align: top;
+}
+
+.cont-title{
+	padding-top: 10px;
+}
+.cont-nwt{
+	padding-top: 10px;
+}
+.cont-nwt a{
+	font-size: 2em;
+	color: #505962;
+	margin: 0 1vh;
+}
+
+header .part-2{
+  color: #999;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+  border-bottom: .05rem solid #e5e5e5;
+}
+
+header .part-2 .title{
+  border-left: 1px solid;
+  vertical-align: top;
+
+}
+
+header .part-2 .sub-title{
+  width: 180px;
+}
+
+
+
+.offset:before{
+	height: 3.7rem;
+	margin-top: -3.7rem;
+	content: "";
+	display: block;
+}
+
+/*--- Navbar ---*/
+.navbar{
+	transition: all .3s;
+	font-weight: 700;
+	border-bottom: medium solid white;
+}
+
+.navbar a{
+	color: inherit;
+}
+
+.navbar .navbar-nav .nav-item{
+	height: 100%; 
+}
+
+.navbar .navbar-nav .nav-item.active{
+	margin-bottom: -3px;
+	border-bottom: medium solid;
+}
+.navbar .navbar-nav .nav-item:hover{
+	margin-bottom: -3px;
+	border-bottom: medium solid;
+
+}
+
+ /*--- Slider ---*/
+header .carousel-item{
+	height: 60vh;
+}
+
+header .carousel-item img{
+	width: 100%;
+}
+header .carousel-caption-wrap{
+	width: 100%;
+	right: 0;
+	left: 0;
+	z-index: 0;
+	top:0;
+	height:100%;
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+}
+
+header .carousel-caption h3{
+	font-weight: 550;
+	font-size: 2rem;
+	text-shadow: 0rem 0rem .8rem black;
+	padding-bottom: 1.6rem;
+	text-transform: uppercase;
+}
+
+header .carousel-caption .no-gutters{
+	background-color: rgba(200,200,200,0.2);
+	opacity: 0.8;
+	transition: all .3s
+}
+
+.carousel-caption .no-gutters:hover{
+	background-color: rgba(200,200,200,0.4);
+	opacity: 1;
+}
+
+.stretched-link{
+	color: #dfdfdf;
+	border-radius: 0;
+	font-size: 1.1rem;
+}
+.stretched-link:hover{
+	color: white;
+}
+
+.article{
+	transition: all .3s;
+	opacity: .8;
+}
+.article:hover{
+	opacity: 1;
+}
+
+.cont-article{
+	color: white;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.8);
+	transition: all .3s;
+}
+
+.cont-article:hover{
+	color: white;
+	opacity: 1;
+	background-color: rgba(0,0,0,0.8);
+}
+.actualite .title{
+	border-left: 3px solid rgba(255,0,0,0.5);
+}
+.actualite:hover{
+	background-color: rgba(100,100,100,0.1);
+}
+
+/*-- Footer --*/
+.blog-footer {
+  padding-top: 1.5rem;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+footer img{
+ opacity: 0.4;
+}
+footer p{
+  letter-spacing: 1.5px;
+  font-size: 1.1rem
+}
+footer p.sub-title{
+  font-size: 1.05rem
+}
+
+#carbonads-container {display:none} [data-anchorjs-icon]::after {content:""} h1[id] {padding-top:0px; margin-top:20px} .zero-clipboard {display:none !important} .bd-content>h2[id]::before, .bd-content>h3[id]::before, .bd-content>h4[id]::before {margin-top:0 !important; height:0rem !important} .bd-home .bd-masthead {padding-top:50px !important} .bd-docs .col-md-9 {flex: 0 0 100% !important} .bd-navbar {display:none !important} .bd-sidebar {display:none !important} .bd-content {right:0px !important; width:100% !important} .bd-toc {display:none !important} .bs-old-docs {display:none} .bd-clipboard {display:none !important} .bs-social {display:none} .bs-sidebar {display:none !important} .bd-docs .col-xl-8 {max-width:none !important} .bd-content>ol, .bd-content>p, .bd-content>ul {max-width:none !important} .bd-docs .bd-content {padding-left:15px !important; padding-top:0 !important} .bd-docs .bd-title {margin-top:10px !important} .col-md-9[role=main] {flex:none !important; width:100% !important; max-width:none !important; padding:0 2rem 1rem !important} .bd-masthead {padding-top:2rem !important} .navbar-fixed-top {position:absolute !important}

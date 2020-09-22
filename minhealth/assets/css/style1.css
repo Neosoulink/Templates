@@ -1,0 +1,102 @@
+/*=================================*/
+/*===== Theme Ministère santé =====*/
+/*=================================*/
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	overflow-x: hidden;
+	color: #505962;
+	font-family: 'Loto', sans-serif;
+}
+
+
+.offset:before{
+	height: 3.7rem;
+	margin-top: -3.7rem;
+	content: "";
+	display: block;
+}
+
+/*--- Navbar ---*/
+.navbar.fixed-top{
+	transition: all .3s;
+	font-weight: 700;
+	height: 80px;
+	position: fixed;
+	z-index:3;
+	background-color: rgba(100,100,100,0.3);
+	border-bottom: medium solid white;
+}
+
+.navbar.fixed-bottom{
+	font-weight: 700;
+	height: 80px;
+	position: fixed;
+	z-index:3;
+	background-color: rgba(0,0,0,0.7);
+	border-bottom: medium solid white;
+}
+
+.navbar img{
+	height: 80px;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+	margin-top: -2px;
+	border-bottom: medium solid;
+}
+
+ /*--- Slider ---*/
+.carousel-item{
+	height: 80vh;
+}
+
+.carousel-caption{
+	width: 100%;
+	right: 0;
+	left: 0;
+	z-index: 0;
+	padding-top:25vh;
+	top:0;
+	height:100%;
+	background-color: rgba(0,0,0,0.7);
+	text-transform: uppercase;
+}
+
+.carousel-caption h1{
+	font-size: 2.5rem;
+	font-weight: 700;
+	letter-spacing: .3rem;
+	text-shadow: 0rem 0rem 1rem black;
+	padding-bottom: 1rem;
+}
+
+.carousel-caption h3{
+	font-size: 2rem;
+	text-shadow: 0rem 0rem .8rem black;
+	padding-bottom: 1.6rem;
+}
+
+.btn-lg{
+	border-width: medium;
+	border-radius: 0;
+	font-size: 1.1rem;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+#carbonads-container {display:none} [data-anchorjs-icon]::after {content:""} h1[id] {padding-top:0px; margin-top:20px} .zero-clipboard {display:none !important} .bd-content>h2[id]::before, .bd-content>h3[id]::before, .bd-content>h4[id]::before {margin-top:0 !important; height:0rem !important} .bd-home .bd-masthead {padding-top:50px !important} .bd-docs .col-md-9 {flex: 0 0 100% !important} .bd-navbar {display:none !important} .bd-sidebar {display:none !important} .bd-content {right:0px !important; width:100% !important} .bd-toc {display:none !important} .bs-old-docs {display:none} .bd-clipboard {display:none !important} .bs-social {display:none} .bs-sidebar {display:none !important} .bd-docs .col-xl-8 {max-width:none !important} .bd-content>ol, .bd-content>p, .bd-content>ul {max-width:none !important} .bd-docs .bd-content {padding-left:15px !important; padding-top:0 !important} .bd-docs .bd-title {margin-top:10px !important} .col-md-9[role=main] {flex:none !important; width:100% !important; max-width:none !important; padding:0 2rem 1rem !important} .bd-masthead {padding-top:2rem !important} .navbar-fixed-top {position:absolute !important}
