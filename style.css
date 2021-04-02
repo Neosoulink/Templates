@@ -173,7 +173,10 @@ body>.wrapper>.content>header>nav.nav-filter>ul>li:hover>a {
 }
 
 body>.wrapper>.content>main {
-	min-height: 1000px;
+	min-height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 body>.wrapper>.content>footer {
