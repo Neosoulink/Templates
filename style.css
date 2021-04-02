@@ -1,0 +1,232 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #00233d;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #001a2d;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+body {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #013358;
+	background-image: url('./bg-waves.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	font-size: 16px;
+}
+
+body>.wrapper {
+	position: absolute;
+	height: 85%;
+	width: 80%;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+body>.wrapper>.blur-mask {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(12px);
+}
+
+body>.wrapper>.content {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden auto;
+}
+
+body>.wrapper>.content>header {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+body>.wrapper>.content>header a {
+	color: white;
+	text-decoration: none;
+}
+
+body>.wrapper>.content>header .nav-brand {
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding: 0 20px;
+	overflow: hidden;
+}
+
+body>.wrapper>.content>header .nav-brand>.brand {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+body>.wrapper>.content>header .nav-brand>.brand>* {
+	display: inline-block;
+}
+
+body>.wrapper>.content>header .nav-brand>.brand>img {
+	float: left;
+	height: 25px;
+	width: 25px;
+	margin-right: 10px;
+}
+
+body>.wrapper>.content>header .nav-brand>.brand>h1 {
+	font-size: 1.4rem;
+}
+
+body>.wrapper>.content>header>.banner-wrapper {
+	background-image: url('banner-img.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #01335855;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	width: 100%;
+	margin-top: 80px;
+	text-align: center;
+}
+
+body>.wrapper>.content>header>.banner-wrapper>div {
+	padding: 20px 30px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	font-size: 1.3rem;
+}
+
+body>.wrapper>.content>header>.banner-wrapper>div h2 {
+	font-weight: 800;
+}
+
+body>.wrapper>.content>header>nav.nav-filter {
+	/*position: fixed;
+	left: 0;
+	top: 120px;*/
+	width: 100%;
+	height: 60px;
+}
+
+body>.wrapper>.content>header>nav.nav-filter>ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+body>.wrapper>.content>header>nav.nav-filter>ul>li {
+	height: 60px;
+}
+
+body>.wrapper>.content>header>nav.nav-filter>ul>li>a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	border-bottom: 3px solid transparent;
+	transition: all .1s ease-in-out;
+}
+
+body>.wrapper>.content>header>nav.nav-filter>ul>li.active>a,
+body>.wrapper>.content>header>nav.nav-filter>ul>li:hover>a {
+	border-bottom-color: white;
+}
+
+body>.wrapper>.content>main {
+	min-height: 1000px;
+}
+
+body>.wrapper>.content>footer {
+	color: #013358;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body>.wrapper>.content>footer>* {
+	height: 80px;
+	color: #013358;
+	display: flex;
+	align-items: center;
+	font-size: 0.9rem;
+}
+
+body>.wrapper>.content>footer>a {
+	padding-left: 20px;
+	justify-content: start;
+	font-size: 0.8rem;
+}
+
+body>.wrapper>.content>footer>a>img {
+	height: 22px;
+	width: 22px;
+	margin-right: 5px;
+}
+
+body>.wrapper>.content>footer>a {
+	padding-left: 20px;
+	justify-content: start;
+}
+
+body>.wrapper>.content>footer>p {
+	padding-right: 20px;
+	justify-content: end;
+	font-size: 0.8rem;
+}
+
+.nav-list-group {
+	list-style: none;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	width: 100%;
+}
+
+.nav-list-group>.list-item {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 100px;
+	padding: auto 15px;
+}

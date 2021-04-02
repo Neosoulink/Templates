@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
 	<title>Nesoulink's Templates</title>
 </head>
+
 <body>
-	Hello world
+
+	<div class="wrapper">
+		<div class="blur-mask"></div>
+		<div class="content">
+			<header>
+				<div class="nav-brand">
+					<a href="/" class="brand">
+						<img src="./dashboard.svg" />
+						<h1>Template gallery</h1>
+					</a>
+				</div>
+				<div class="banner-wrapper">
+					<div>
+						<h2>New experience</h2>
+						<p>Breaking everything!</p>
+					</div>
+				</div>
+				<nav class="nav-filter">
+					<ul class="nav-list-group">
+						<li class="list-item active">
+							<a href="#">All</a>
+						</li>
+						<li class="list-item">
+							<a href="#">In productions</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main>sd</main>
+			<footer>
+				<a href="/" class="brand">
+					<img src="./github.svg" />
+					<h3>Nesoulink</h3>
+				</a>
+				<p class="copyrigth">Copyright 2021 @ Neosoulink alright reserved!</p>
+			</footer>
+		</div>
+	</div>
+
+	<script>
+		window.document.body.style.display = "none";
+
+		window.onload = function (e) {
+			window.document.body.style.display = "flex";
+		}
+	</script>
 </body>
+
 </html>
