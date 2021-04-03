@@ -107,18 +107,23 @@ body>.wrapper>.content>header .nav-brand>.brand {
 }
 
 body>.wrapper>.content>header .nav-brand>.brand>* {
-	display: inline-block;
+	display: flex;
+	justify-content: start;
+	align-items: center;
 }
 
 body>.wrapper>.content>header .nav-brand>.brand>img {
 	float: left;
-	height: 25px;
-	width: 25px;
+	height: 20px;
+	width: 20px;
 	margin-right: 10px;
 }
 
 body>.wrapper>.content>header .nav-brand>.brand>h1 {
 	font-size: 1.4rem;
+	font-weight: 900;
+	/*-webkit-text-stroke: 0.7px #fff;
+	-webkit-text-fill-color: transparent;*/
 }
 
 body>.wrapper>.content>header .nav-brand.shrink {
@@ -127,8 +132,8 @@ body>.wrapper>.content>header .nav-brand.shrink {
 }
 
 body>.wrapper>.content>header .nav-brand.shrink>.brand>img {
-	height: 20px;
-	width: 20px;
+	height: 17px;
+	width: 17px;
 	margin-right: 8px;
 }
 
