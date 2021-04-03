@@ -3,10 +3,13 @@
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
+	cursor: none;
 }
 
 ::-webkit-scrollbar {
 	width: 8px;
+	cursor: pointer;
 }
 
 ::-webkit-scrollbar-track {
@@ -55,7 +58,7 @@ body>.wrapper>.blur-mask {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.1);
+	background: rgb(0, 0, 0, 5%);
 	backdrop-filter: blur(12px);
 }
 
@@ -213,7 +216,7 @@ body>.wrapper>.content>footer {
 
 body>.wrapper>.content>footer>* {
 	height: 80px;
-	color: #013358;
+	color: #004568;
 	display: flex;
 	align-items: center;
 	font-size: 0.9rem;
@@ -242,6 +245,27 @@ body>.wrapper>.content>footer>p {
 	font-size: 0.8rem;
 }
 
+/*
+* Utilities
+*/
+.cursor {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	transition: 180ms ease-out;
+	z-index: 9999;
+	pointer-events: none;
+}
+
+.cursor.active{
+	width: 30px;
+	height: 30px;
+}
+
 .nav-list-group {
 	list-style: none;
 	display: flex;
@@ -260,5 +284,5 @@ body>.wrapper>.content>footer>p {
 }
 
 .trans {
-	background-color: #015C79;
+	background-color: #004568;
 }
