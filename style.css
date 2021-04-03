@@ -272,6 +272,11 @@ body>.wrapper>.content>footer>p {
 	height: 30px;
 }
 
+.cursor.active-lg {
+	width: 60px;
+	height: 60px;
+}
+
 .nav-list-group {
 	list-style: none;
 	display: flex;

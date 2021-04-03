@@ -4,8 +4,11 @@ window.onload = function (e) {
 	document.body.style.display = "flex";
 
 	const cursor = document.querySelector(".cursor");
+	const aNodes = document.getElementsByTagName('A');
+
 	const content = document.getElementById('content');
 	const navBrand = document.querySelector('.nav-brand');
+	const bannerWrapper = document.querySelector('.banner-brand');
 	const navFilter = document.querySelector('.nav-filter');
 
 	function stickyElement(pageYOffset = window.pageYOffset, elToStick = Object, shrink = false) {
@@ -20,14 +23,9 @@ window.onload = function (e) {
 		}
 	}
 
-	function customizeCursor(e) {
+	function customizeCursorMovement(e) {
 		cursor.style.top = e.pageY + "px";
 		cursor.style.left = e.pageX + "px";
-		if (['a', 'scrollBar'].includes(e.target.tagName.toLowerCase())) {
-			cursor.classList.add('active');
-		} else {
-			cursor.classList.remove('active');
-		}
 	}
 
 	content.addEventListener('scroll', () => {
@@ -35,8 +33,24 @@ window.onload = function (e) {
 		stickyElement(content.scrollTop, navFilter);
 	});
 
-	document.addEventListener("mousemove", customizeCursor);
+	document.addEventListener("mousemove", customizeCursorMovement);
 
 	document.addEventListener("mousedown", () => cursor.classList.add('active'));
 	document.addEventListener("mouseup", () => cursor.classList.remove('active'));
+
+	bannerWrapper.addEventListener('mouseover', () => {
+		cursor.classList.add('active-lg')
+	});
+	bannerWrapper.addEventListener('mouseleave', () => {
+		cursor.classList.remove('active-lg')
+	});
+
+	for (let i = 0; i < aNodes.length; i++) {
+		aNodes[i].addEventListener('mouseover', () => {
+			cursor.classList.add('active')
+		})
+		aNodes[i].addEventListener('mouseleave', () => {
+			cursor.classList.remove('active')
+		})
+	}
 }
