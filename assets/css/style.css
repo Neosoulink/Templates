@@ -272,6 +272,12 @@ body>.wrapper>.content>main>.list-templates-grid>a.template-item:hover>.content 
 	font-weight: 400;
 }
 
+body>.wrapper>.content>main>.list-templates-grid>a.template-item:hover>.content>.info {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
 body>.wrapper>.content>footer {
 	position: fixed;
 	width: 80%;
