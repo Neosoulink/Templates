@@ -90,7 +90,7 @@ body>.wrapper>.content>header .nav-brand {
 	display: flex;
 	justify-content: start;
 	align-items: center;
-	background-color: red;
+	border-radius: 20px 20px 0 0;
 }
 
 body>.wrapper>.content>header .nav-brand>.brand {
@@ -112,6 +112,21 @@ body>.wrapper>.content>header .nav-brand>.brand>img {
 
 body>.wrapper>.content>header .nav-brand>.brand>h1 {
 	font-size: 1.4rem;
+}
+
+body>.wrapper>.content>header .nav-brand.shrink {
+	height: 50px;
+	margin-bottom: -20px;
+}
+
+body>.wrapper>.content>header .nav-brand.shrink>.brand>img {
+	height: 20px;
+	width: 20px;
+	margin-right: 8px;
+}
+
+body>.wrapper>.content>header .nav-brand.shrink>.brand>h1 {
+	font-size: 1.2rem;
 }
 
 body>.wrapper>.content>header>.banner-wrapper {
@@ -143,14 +158,14 @@ body>.wrapper>.content>header>.banner-wrapper>div h2 {
 body>.wrapper>.content>header>nav.nav-filter {
 	width: 100%;
 	height: 60px;
+	border-radius: 0 0 20px 20px;
 }
 
 body>.wrapper>.content>header>nav.nav-filter.sticky {
 	position: fixed;
 	width: 80%;
-	top: calc(80px + 7.5%);
+	top: calc(50px + 7.5%);
 	overflow: hidden;
-	background-color: blue;
 }
 
 body>.wrapper>.content>header>nav.nav-filter>ul {
@@ -188,7 +203,6 @@ body>.wrapper>.content>main {
 }
 
 body>.wrapper>.content>footer {
-	color: #013358;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -240,4 +254,8 @@ body>.wrapper>.content>footer>p {
 	align-items: center;
 	min-width: 100px;
 	padding: auto 15px;
+}
+
+.trans {
+	background-color: #015C79aa;
 }
