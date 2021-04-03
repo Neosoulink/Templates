@@ -97,7 +97,7 @@ body>.wrapper>.content>header .nav-brand {
 	justify-content: start;
 	align-items: center;
 	border-radius: 20px 20px 0 0;
-	z-index: 1;
+	z-index: 11;
 }
 
 body>.wrapper>.content>header .nav-brand>.brand {
@@ -174,7 +174,7 @@ body>.wrapper>.content>header>nav.nav-filter.sticky {
 	top: calc(50px + 7.5%);
 	overflow: hidden;
 	box-shadow: 0 5px 80px 10px rgba(0, 0, 0, 0.2);
-	z-index: 0;
+	z-index: 10;
 }
 
 body>.wrapper>.content>header>nav.nav-filter>ul {
@@ -205,16 +205,66 @@ body>.wrapper>.content>header>nav.nav-filter>ul>li:hover>a {
 }
 
 body>.wrapper>.content>main {
-	min-height: 1000px;
+	/*min-height: 800px;*/
+	padding-top: 30px;
+	padding-bottom: 60px;
 }
 
-body>.wrapper>.content>main>.grid-container {
-	width: 100%;
+body>.wrapper>.content>main>.list-templates-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: auto auto auto;
-	gap: 0px 0px;
-	grid-template-areas: ". . . .";
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 10px 10px;
+	grid-template-areas: ". . .";
+	width: 100%;
+	margin: auto 10px;
+}
+
+body>.wrapper>.content>main>.list-templates-grid>a.template-item {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-height: 200px;
+	padding: auto 5%;
+	border-radius: 10px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+body>.wrapper>.content>main>.list-templates-grid>a.template-item>img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+body>.wrapper>.content>main>.list-templates-grid>a.template-item>.content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 10px;
+	opacity: 0;
+}
+
+body>.wrapper>.content>main>.list-templates-grid>a.template-item:hover>.content {
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 45.47%, rgba(0, 0, 0, 0.7) 90.13%);
+	opacity: 1;
+}
+
+body>.wrapper>.content>main>.list-templates-grid>a.template-item:hover>.content>div {
+	min-height: 30px;
+}
+
+body>.wrapper>.content>main>.list-templates-grid>a.template-item:hover>.content .title {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+body>.wrapper>.content>main>.list-templates-grid>a.template-item:hover>.content .sub-title {
+	font-size: 0.9rem;
+	font-weight: 400;
 }
 
 body>.wrapper>.content>footer {
@@ -307,5 +357,5 @@ body>.wrapper>.content>footer>p {
 }
 
 .trans {
-	background-color: #004568;
+	background-color: #000a1a;
 }
