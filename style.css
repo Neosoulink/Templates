@@ -52,14 +52,15 @@ body>.wrapper {
 	width: 80%;
 	overflow: hidden;
 	border-radius: 20px;
+	box-shadow: 0 5px 20px 2px #00000099;
 }
 
 body>.wrapper>.blur-mask {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background: rgb(0, 0, 0, 35%);
-	background-image: linear-gradient(top, 90deg, rgb(255, 255, 255, 30%), rgb(255, 255, 255, 30%));
+	/*background: rgb(0, 0, 0, 35%);*/
+	background-image: linear-gradient(to bottom, rgb(0, 0, 0, 30%), rgb(0, 0, 0, 80%));
 	/*backdrop-filter: blur(12px);*/
 	/*-webkit-backdrop-filter: blur(12);*/
 }
@@ -211,13 +212,18 @@ body>.wrapper>.content>main {
 }
 
 body>.wrapper>.content>footer {
+	position: fixed;
+	width: 80%;
+	bottom: 7.5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border-radius: 0 0 20px 20px;
+	z-index: 3;
 }
 
 body>.wrapper>.content>footer>* {
-	height: 80px;
+	height: 60px;
 	color: #FFF;
 	display: flex;
 	align-items: center;

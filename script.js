@@ -28,29 +28,49 @@ window.onload = function (e) {
 		cursor.style.left = e.pageX + "px";
 	}
 
+	function activeCursor({ def = true, lg = false }) {
+		if (def) cursor.classList.add('active');
+		if (lg) cursor.classList.add('active-lg');
+	}
+
+	function disableCursor() {
+		cursor.classList.remove('active');
+		cursor.classList.remove('active-lg');
+	}
+
 	content.addEventListener('scroll', () => {
 		stickyElement(content.scrollTop, navBrand, true);
 		stickyElement(content.scrollTop, navFilter);
 	});
 
 	document.addEventListener("mousemove", customizeCursorMovement);
+	document.addEventListener("mousedown", () => {
+		activeCursor({ def: true });
+	});
+	document.addEventListener("mouseup", () => {
+		disableCursor()
+	});
+	document.addEventListener("dblclick", () => {
+		activeCursor({ lg: true })
 
-	document.addEventListener("mousedown", () => cursor.classList.add('active'));
-	document.addEventListener("mouseup", () => cursor.classList.remove('active'));
+		setTimeout(() => {
+			disableCursor();
+		}, 1700);
+	})
 
 	bannerWrapper.addEventListener('mouseover', () => {
-		cursor.classList.add('active-lg')
+		activeCursor({ lg: true });
 	});
 	bannerWrapper.addEventListener('mouseleave', () => {
-		cursor.classList.remove('active-lg')
+		disableCursor();
 	});
 
 	for (let i = 0; i < aNodes.length; i++) {
 		aNodes[i].addEventListener('mouseover', () => {
-			cursor.classList.add('active')
-		})
+			activeCursor({ def: true });
+		});
 		aNodes[i].addEventListener('mouseleave', () => {
-			cursor.classList.remove('active')
-		})
+			disableCursor();
+		});
 	}
 }
