@@ -72,6 +72,7 @@ body>.wrapper>.content>header {
 	position: relative;
 	float: left;
 	width: 100%;
+	overflow: visible;
 }
 
 body>.wrapper>.content>header a {
@@ -82,12 +83,14 @@ body>.wrapper>.content>header a {
 body>.wrapper>.content>header .nav-brand {
 	position: fixed;
 	height: 80px;
-	width: 100%;
+	width: 80%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0 20px;
 	display: flex;
 	justify-content: start;
 	align-items: center;
-	padding: 0 20px;
-	overflow: hidden;
+	background-color: red;
 }
 
 body>.wrapper>.content>header .nav-brand>.brand {
@@ -138,11 +141,16 @@ body>.wrapper>.content>header>.banner-wrapper>div h2 {
 }
 
 body>.wrapper>.content>header>nav.nav-filter {
-	/*position: fixed;
-	left: 0;
-	top: 120px;*/
 	width: 100%;
 	height: 60px;
+}
+
+body>.wrapper>.content>header>nav.nav-filter.sticky {
+	position: fixed;
+	width: 80%;
+	top: calc(80px + 7.5%);
+	overflow: hidden;
+	background-color: blue;
 }
 
 body>.wrapper>.content>header>nav.nav-filter>ul {
@@ -173,7 +181,7 @@ body>.wrapper>.content>header>nav.nav-filter>ul>li:hover>a {
 }
 
 body>.wrapper>.content>main {
-	min-height: 300px;
+	min-height: 1000px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

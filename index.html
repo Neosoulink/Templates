@@ -13,11 +13,11 @@
 
 	<div class="wrapper">
 		<div class="blur-mask"></div>
-		<div class="content">
+		<div id="content" class="content">
 			<header>
 				<div class="nav-brand">
 					<a href="/" class="brand">
-						<img src="./dashboard.svg" />
+						<img loading="eager" src="./dashboard.svg" />
 						<h1>Template gallery</h1>
 					</a>
 				</div>
@@ -41,7 +41,7 @@
 			<main>No data available</main>
 			<footer>
 				<a href="https://github.com/Neosoulink" target="_blank" class="brand">
-					<img src="./github.svg" />
+					<img loading="lazy" src="./github.svg" />
 					<h3>Nesoulink</h3>
 				</a>
 				<p class="copyrigth">Copyright 2021 @ Neosoulink alright reserved!</p>
@@ -49,13 +49,7 @@
 		</div>
 	</div>
 
-	<script>
-		window.document.body.style.display = "none";
-
-		window.onload = function (e) {
-			window.document.body.style.display = "flex";
-		}
-	</script>
+	<script src="./script.js"></script>
 </body>
 
 </html>
