@@ -91,6 +91,7 @@ body>.wrapper>.content>header .nav-brand {
 	justify-content: start;
 	align-items: center;
 	border-radius: 20px 20px 0 0;
+	z-index: 1;
 }
 
 body>.wrapper>.content>header .nav-brand>.brand {
@@ -166,6 +167,8 @@ body>.wrapper>.content>header>nav.nav-filter.sticky {
 	width: 80%;
 	top: calc(50px + 7.5%);
 	overflow: hidden;
+	box-shadow: 0 5px 80px 10px rgba(0, 0, 0, 0.4);
+	z-index: 0;
 }
 
 body>.wrapper>.content>header>nav.nav-filter>ul {
@@ -257,5 +260,5 @@ body>.wrapper>.content>footer>p {
 }
 
 .trans {
-	background-color: #015C79aa;
+	background-color: #015C79;
 }
