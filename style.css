@@ -206,9 +206,15 @@ body>.wrapper>.content>header>nav.nav-filter>ul>li:hover>a {
 
 body>.wrapper>.content>main {
 	min-height: 1000px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+}
+
+body>.wrapper>.content>main>.grid-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	gap: 0px 0px;
+	grid-template-areas: ". . . .";
 }
 
 body>.wrapper>.content>footer {
