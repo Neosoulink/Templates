@@ -38,7 +38,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: #013358;
-	background-image: url('./bg-waves.jpg');
+	background-image: url('../img/bg-waves.jpg');
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -137,7 +137,7 @@ body>.wrapper>.content>header .nav-brand.shrink>.brand>h1 {
 }
 
 body>.wrapper>.content>header>.banner-wrapper {
-	background-image: url('banner-img.png');
+	background-image: url('../img/banner-img.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: #01335855;
