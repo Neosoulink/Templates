@@ -173,7 +173,7 @@ body>.wrapper>.content>header>nav.nav-filter.sticky {
 	width: 80%;
 	top: calc(50px + 7.5%);
 	overflow: hidden;
-	box-shadow: 0 5px 80px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 5px 80px 10px rgba(0, 0, 0, 0.2);
 	z-index: 0;
 }
 
