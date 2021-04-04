@@ -1,6 +1,6 @@
 # 🌟 My Templates Gallery
 
-This project aims to present you some of my HTML templates that I realize to change my mind
+This project aims to present you some of my HTML templates that I realize just for the fun!
 
 ## 📋 To do
 
@@ -10,7 +10,7 @@ This project aims to present you some of my HTML templates that I realize to cha
 - [ ] **Spinner loading**
 - [ ] **Cursor ripple**
 
-I you like, don't forget to leave a start ⭐
+If you like, don't forget to leave a start ⭐
 
 **You can find the demo version [here](hhttps://nsl-templatesgallery.netlify.app/tt)**
 
