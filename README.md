@@ -10,7 +10,7 @@ This project aims to present you some of my HTML templates that I realize just f
 - [ ] **Spinner loading**
 - [ ] **Cursor ripple**
 
-If you like, don't forget to leave a start ⭐
+If you like, don't forget to leave a Start ⭐
 
 **You can find the demo version [here](hhttps://nsl-templatesgallery.netlify.app/tt)**
 
