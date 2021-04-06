@@ -395,7 +395,7 @@ body>.wrapper>.content>footer>p {
 /*
 * Utilities
 */
-.cursor {
+#cursor {
 	position: absolute;
 	width: 20px;
 	height: 20px;
@@ -409,12 +409,12 @@ body>.wrapper>.content>footer>p {
 	pointer-events: none;
 }
 
-.cursor.active {
+#cursor.active {
 	width: 30px;
 	height: 30px;
 }
 
-.cursor.active-lg {
+#cursor.active-lg {
 	width: 60px;
 	height: 60px;
 }

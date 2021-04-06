@@ -3,7 +3,7 @@ window.document.body.style.display = "none";
 window.onload = function (e) {
 	document.body.style.display = "flex";
 
-	const cursor = document.querySelector(".cursor");
+	const cursor = document.getElementById("cursor");
 	const aNodes = document.getElementsByTagName('A');
 
 	const content = document.getElementById('content');
