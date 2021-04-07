@@ -1,9 +1,5 @@
-
 window.onload = function (e) {
-	document.body.style.display = "flex";
 	const loader = document.getElementById("loader");
-	loader.style.display = "none";
-	console.log(loader)
 	const cursor = document.getElementById("cursor");
 	const aNodes = document.getElementsByTagName('A');
 
@@ -12,6 +8,8 @@ window.onload = function (e) {
 	const bannerWrapper = document.querySelector('.banner-brand');
 	const navFilter = document.querySelector('.nav-filter');
 
+	document.body.style.display = "flex";
+	loader.style.display = "none";
 
 	function stickyElement(pageYOffset = window.pageYOffset, elToStick = Object, shrink = false) {
 		if (pageYOffset >= elToStick.offsetTop) {

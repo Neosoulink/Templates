@@ -9,95 +9,102 @@
 	<title>Nesoulink's Templates</title>
 </head>
 
-<div id="loader">
-	<svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-		y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
-		<circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
-			<animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1" />
-		</circle>
-		<circle fill="#fff" stroke="none" cx="26" cy="50" r="6">
-			<animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.2" />
-		</circle>
-		<circle fill="#fff" stroke="none" cx="46" cy="50" r="6">
-			<animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.3" />
-		</circle>
-	</svg>
-</div>
+<body>
 
-<td style="display: none;">
-	<div id="cursor"></div>
-
-	<div id="bg-waves">
-		<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-			viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-			<defs>
-				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-			</defs>
-			<g class="parallax">
-				<use xlink:href="#gentle-wave" x="48" y="2" fill="#015C79" />
-				<use xlink:href="#gentle-wave" x="48" y="5" fill="#327794" />
-				<use xlink:href="#gentle-wave" x="48" y="7" fill="#80C4E7" />
-				<use xlink:href="#gentle-wave" x="48" y="10" fill="#D7F5F5" />
-			</g>
+	<div id="loader">
+		<svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+			y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+			<circle fill="#555" stroke="none" cx="6" cy="50" r="6">
+				<animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1" />
+			</circle>
+			<circle fill="#555" stroke="none" cx="26" cy="50" r="6">
+				<animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.2" />
+			</circle>
+			<circle fill="#555" stroke="none" cx="46" cy="50" r="6">
+				<animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.3" />
+			</circle>
 		</svg>
 	</div>
+	<!-- /.loader -->
+
+	<div id="cursor"></div>
 
 	<div class="wrapper">
-		<div class="blur-mask"></div>
-		<div id="content" class="content">
-			<header>
-				<div class="nav-brand">
-					<a href="/" class="brand">
-						<img loading="eager" src="./assets/svg/dashboard.svg" />
-						<h1>Templates gallery</h1>
-					</a>
-				</div>
-				<div class="banner-wrapper">
-					<div class="banner-brand">
-						<h2>New experience</h2>
-						<p>Breaking everything!</p>
-					</div>
-				</div>
-				<nav class="nav-filter">
-					<ul class="nav-list-group">
-						<li class="list-item active">
-							<a href="#">All</a>
-						</li>
-						<li class="list-item">
-							<a href="#">In productions</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<main>
-				<div class="list-templates-grid">
-					<a href="#" class="template-item">
-						<img loading="lazy" src="./assets/img/bg-waves.jpg" />
-						<div class="content">
-							<div class="describtion">
-								<h3 class="title">Title template</h3>
-								<p class="sub-title">Sub title</p>
-							</div>
-
-							<div class="info">
-								<span style="margin-right: 5px;margin-top: -2px;">0</span>
-								<img src="./assets/svg/eye.svg" height="16" width="16" />
-							</div>
-						</div>
-					</a>
-				</div>
-			</main>
-			<footer>
-				<a href="https://github.com/Neosoulink" target="_blank" class="brand">
-					<img loading="lazy" src="./assets/svg/github.svg" />
-					<h3>Nesoulink</h3>
-				</a>
-				<p class="copyrigth">Copyright 2021 @ Neosoulink alright reserved!</p>
-			</footer>
+		<div class="waves-container">
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+					<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">
+					<use xlink:href="#gentle-wave" x="48" y="2" fill="#015C79" />
+					<use xlink:href="#gentle-wave" x="48" y="5" fill="#327794" />
+					<use xlink:href="#gentle-wave" x="48" y="7" fill="#80C4E7" />
+					<use xlink:href="#gentle-wave" x="48" y="10" fill="#D7F5F5" />
+				</g>
+			</svg>
 		</div>
-	</div>
+		<!-- /.waves-container -->
 
-	<script src="./assets/js/script.js"></script>
-</td>
+		<div class="app-card">
+			<div class="mask"></div>
+			<div id="content" class="content">
+				<header>
+					<div class="nav-brand">
+						<a href="/" class="brand">
+							<img loading="eager" src="./assets/svg/dashboard.svg" />
+							<h1>Templates gallery</h1>
+						</a>
+					</div>
+					<div class="banner-wrapper">
+						<div class="banner-brand">
+							<h2>New experience</h2>
+							<p>Breaking everything!</p>
+						</div>
+					</div>
+					<nav class="nav-filter">
+						<ul class="nav-list-group">
+							<li class="list-item active">
+								<a href="#">All</a>
+							</li>
+							<li class="list-item">
+								<a href="#">In productions</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				<main>
+					<div class="list-templates-grid">
+						<a href="#" class="template-item">
+							<img loading="lazy" src="./assets/img/bg-waves.jpg" />
+							<div class="content">
+								<div class="describtion">
+									<h3 class="title">Title template</h3>
+									<p class="sub-title">Sub title</p>
+								</div>
+
+								<div class="info">
+									<span style="margin-right: 5px;margin-top: -2px;">0</span>
+									<img src="./assets/svg/eye.svg" height="16" width="16" />
+								</div>
+							</div>
+						</a>
+					</div>
+				</main>
+				<footer>
+					<a href="https://github.com/Neosoulink" target="_blank" class="brand">
+						<img loading="lazy" src="./assets/svg/github.svg" />
+						<h3>Nesoulink</h3>
+					</a>
+					<p class="copyrigth">Copyright 2021 @ Neosoulink alright reserved!</p>
+				</footer>
+			</div>
+		</div>
+		<!-- /.app-card -->
+	</div>
+	<!-- /.wrapper -->
+
+</body>
+<script src="./assets/js/script.js" defer></script>
 
 </html>
