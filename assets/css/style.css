@@ -25,13 +25,6 @@
 	background: #fff;
 }
 
-#loader svg {
-	width: 100px;
-	height: 100px;
-	margin: 20px;
-	display: inline-block;
-}
-
 html,
 body {
 	height: 100%;
@@ -61,7 +54,6 @@ body>.wrapper {
 	justify-content: center;
 	align-items: center;
 }
-
 
 body>.wrapper>.waves-container {
 	position: absolute;
@@ -410,7 +402,18 @@ body>.wrapper>.app-card>.content>footer>p {
 }
 
 /*
-* Utilities
+* Page loader
+*/
+#loader svg {
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	display: inline-block;
+	position: absolute;
+}
+
+/*
+* Custom cursor
 */
 #cursor {
 	position: absolute;
@@ -418,12 +421,11 @@ body>.wrapper>.app-card>.content>footer>p {
 	height: 20px;
 	background: rgba(255, 255, 255, 1);
 	mix-blend-mode: difference;
-	/*backdrop-filter: blur(1px);*/
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
 	transition: 180ms ease-out;
-	z-index: 9999;
 	pointer-events: none;
+	z-index: 9999;
 }
 
 #cursor.active {
