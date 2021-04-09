@@ -13,7 +13,7 @@ body {
 	font-size: 16px;
 }
 
-body>.app-wrapper {
+body>#app {
 	color: white;
 	position: relative;
 	height: 100vh;
@@ -24,7 +24,7 @@ body>.app-wrapper {
 	align-items: center;
 }
 
-body>.app-wrapper>.bg {
+body>#app>.bg {
 	background-color: #013358;
 	position: absolute;
 	width: 100%;
@@ -32,7 +32,7 @@ body>.app-wrapper>.bg {
 	z-index: -1;
 }
 
-body>.app-wrapper>.waves-bg {
+body>#app>.waves-bg {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -40,7 +40,7 @@ body>.app-wrapper>.waves-bg {
 	align-items: flex-end;
 }
 
-body>.app-wrapper>.waves-bg>.waves {
+body>#app>.waves-bg>.waves {
 	position: relative;
 	width: 100%;
 	height: 50vh;
@@ -49,28 +49,28 @@ body>.app-wrapper>.waves-bg>.waves {
 	max-height: 500px;
 }
 
-body>.app-wrapper>.waves-bg>.waves>.parallax>use {
+body>#app>.waves-bg>.waves>.parallax>use {
 	animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 	-webkit-filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.8));
 	filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.8));
 }
 
-body>.app-wrapper>.waves-bg>.waves>.parallax>use:nth-child(1) {
+body>#app>.waves-bg>.waves>.parallax>use:nth-child(1) {
 	animation-delay: -2s;
 	animation-duration: 7s;
 }
 
-body>.app-wrapper>.waves-bg>.waves>.parallax>use:nth-child(2) {
+body>#app>.waves-bg>.waves>.parallax>use:nth-child(2) {
 	animation-delay: -3s;
 	animation-duration: 10s;
 }
 
-body>.app-wrapper>.waves-bg>.waves>.parallax>use:nth-child(3) {
+body>#app>.waves-bg>.waves>.parallax>use:nth-child(3) {
 	animation-delay: -4s;
 	animation-duration: 13s;
 }
 
-body>.app-wrapper>.waves-bg>.waves>.parallax>use:nth-child(4) {
+body>#app>.waves-bg>.waves>.parallax>use:nth-child(4) {
 	animation-delay: -5s;
 	animation-duration: 20s;
 }
@@ -85,7 +85,7 @@ body>.app-wrapper>.waves-bg>.waves>.parallax>use:nth-child(4) {
 	}
 }
 
-body>.app-wrapper>.app-card {
+body>#app>.app-card {
 	position: absolute;
 	height: 85%;
 	width: 80%;
@@ -94,7 +94,7 @@ body>.app-wrapper>.app-card {
 	box-shadow: 0 5px 20px 2px #00000099;
 }
 
-body>.app-wrapper>.app-card>.mask {
+body>#app>.app-card>.mask {
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -104,7 +104,7 @@ body>.app-wrapper>.app-card>.mask {
 	/*-webkit-backdrop-filter: blur(12);*/
 }
 
-body>.app-wrapper>.app-card>.content {
+body>#app>.app-card>.content {
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -113,19 +113,19 @@ body>.app-wrapper>.app-card>.content {
 	overflow: hidden auto;
 }
 
-body>.app-wrapper>.app-card>.content>header {
+body>#app>.app-card>.content>header {
 	position: relative;
 	float: left;
 	width: 100%;
 	overflow: visible;
 }
 
-body>.app-wrapper>.app-card>.content>header a {
+body>#app>.app-card>.content>header a {
 	color: white;
 	text-decoration: none;
 }
 
-body>.app-wrapper>.app-card>.content>header .nav-brand {
+body>#app>.app-card>.content>header .nav-brand {
 	position: fixed;
 	height: 80px;
 	width: 80%;
@@ -139,48 +139,48 @@ body>.app-wrapper>.app-card>.content>header .nav-brand {
 	z-index: 11;
 }
 
-body>.app-wrapper>.app-card>.content>header .nav-brand>.brand {
+body>#app>.app-card>.content>header .nav-brand>.brand {
 	display: flex;
 	justify-content: start;
 	align-items: center;
 }
 
-body>.app-wrapper>.app-card>.content>header .nav-brand>.brand>* {
+body>#app>.app-card>.content>header .nav-brand>.brand>* {
 	display: flex;
 	justify-content: start;
 	align-items: center;
 }
 
-body>.app-wrapper>.app-card>.content>header .nav-brand>.brand>img {
+body>#app>.app-card>.content>header .nav-brand>.brand>img {
 	float: left;
 	height: 20px;
 	width: 20px;
 	margin-right: 10px;
 }
 
-body>.app-wrapper>.app-card>.content>header .nav-brand>.brand>h1 {
+body>#app>.app-card>.content>header .nav-brand>.brand>h1 {
 	font-size: 1.4rem;
 	font-weight: 900;
 	/*-webkit-text-stroke: 0.7px #fff;
 	-webkit-text-fill-color: transparent;*/
 }
 
-body>.app-wrapper>.app-card>.content>header .nav-brand.shrink {
+body>#app>.app-card>.content>header .nav-brand.shrink {
 	height: 50px;
 	margin-bottom: -20px;
 }
 
-body>.app-wrapper>.app-card>.content>header .nav-brand.shrink>.brand>img {
+body>#app>.app-card>.content>header .nav-brand.shrink>.brand>img {
 	height: 17px;
 	width: 17px;
 	margin-right: 8px;
 }
 
-body>.app-wrapper>.app-card>.content>header .nav-brand.shrink>.brand>h1 {
+body>#app>.app-card>.content>header .nav-brand.shrink>.brand>h1 {
 	font-size: 1.2rem;
 }
 
-body>.app-wrapper>.app-card>.content>header>.banner-wrapper {
+body>#app>.app-card>.content>header>.banner-wrapper {
 	background-image: url('../img/banner-img.png');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -195,24 +195,24 @@ body>.app-wrapper>.app-card>.content>header>.banner-wrapper {
 	text-align: center;
 }
 
-body>.app-wrapper>.app-card>.content>header>.banner-wrapper>div {
+body>#app>.app-card>.content>header>.banner-wrapper>div {
 	padding: 20px 30px;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 20px;
 	font-size: 1.3rem;
 }
 
-body>.app-wrapper>.app-card>.content>header>.banner-wrapper>div h2 {
+body>#app>.app-card>.content>header>.banner-wrapper>div h2 {
 	font-weight: 800;
 }
 
-body>.app-wrapper>.app-card>.content>header>nav.nav-filter {
+body>#app>.app-card>.content>header>nav.nav-filter {
 	width: 100%;
 	height: 60px;
 	border-radius: 0 0 20px 20px;
 }
 
-body>.app-wrapper>.app-card>.content>header>nav.nav-filter.sticky {
+body>#app>.app-card>.content>header>nav.nav-filter.sticky {
 	position: fixed;
 	width: 80%;
 	top: calc(50px + 7.5%);
@@ -221,7 +221,7 @@ body>.app-wrapper>.app-card>.content>header>nav.nav-filter.sticky {
 	z-index: 10;
 }
 
-body>.app-wrapper>.app-card>.content>header>nav.nav-filter>ul {
+body>#app>.app-card>.content>header>nav.nav-filter>ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -229,11 +229,11 @@ body>.app-wrapper>.app-card>.content>header>nav.nav-filter>ul {
 	width: 100%;
 }
 
-body>.app-wrapper>.app-card>.content>header>nav.nav-filter>ul>li {
+body>#app>.app-card>.content>header>nav.nav-filter>ul>li {
 	height: 60px;
 }
 
-body>.app-wrapper>.app-card>.content>header>nav.nav-filter>ul>li>a {
+body>#app>.app-card>.content>header>nav.nav-filter>ul>li>a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -243,18 +243,18 @@ body>.app-wrapper>.app-card>.content>header>nav.nav-filter>ul>li>a {
 	transition: all .1s ease-in-out;
 }
 
-body>.app-wrapper>.app-card>.content>header>nav.nav-filter>ul>li.active>a,
-body>.app-wrapper>.app-card>.content>header>nav.nav-filter>ul>li:hover>a {
+body>#app>.app-card>.content>header>nav.nav-filter>ul>li.active>a,
+body>#app>.app-card>.content>header>nav.nav-filter>ul>li:hover>a {
 	border-bottom-color: white;
 }
 
-body>.app-wrapper>.app-card>.content>main {
+body>#app>.app-card>.content>main {
 	/*min-height: 800px;*/
 	padding-top: 30px;
 	padding-bottom: 60px;
 }
 
-body>.app-wrapper>.app-card>.content>main>.list-templates-grid {
+body>#app>.app-card>.content>main>.list-templates-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto;
@@ -264,7 +264,7 @@ body>.app-wrapper>.app-card>.content>main>.list-templates-grid {
 	margin: auto 10px;
 }
 
-body>.app-wrapper>.app-card>.content>main>.list-templates-grid>a.template-item {
+body>#app>.app-card>.content>main>.list-templates-grid>a.template-item {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
@@ -275,13 +275,13 @@ body>.app-wrapper>.app-card>.content>main>.list-templates-grid>a.template-item {
 	text-decoration: none;
 }
 
-body>.app-wrapper>.app-card>.content>main>.list-templates-grid>a.template-item>img {
+body>#app>.app-card>.content>main>.list-templates-grid>a.template-item>img {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
 
-body>.app-wrapper>.app-card>.content>main>.list-templates-grid>a.template-item>.content {
+body>#app>.app-card>.content>main>.list-templates-grid>a.template-item>.content {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -292,32 +292,32 @@ body>.app-wrapper>.app-card>.content>main>.list-templates-grid>a.template-item>.
 	opacity: 0;
 }
 
-body>.app-wrapper>.app-card>.content>main>.list-templates-grid>a.template-item:hover>.content {
+body>#app>.app-card>.content>main>.list-templates-grid>a.template-item:hover>.content {
 	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 45.47%, rgba(0, 0, 0, 0.7) 90.13%);
 	opacity: 1;
 }
 
-body>.app-wrapper>.app-card>.content>main>.list-templates-grid>a.template-item:hover>.content>div {
+body>#app>.app-card>.content>main>.list-templates-grid>a.template-item:hover>.content>div {
 	min-height: 30px;
 }
 
-body>.app-wrapper>.app-card>.content>main>.list-templates-grid>a.template-item:hover>.content .title {
+body>#app>.app-card>.content>main>.list-templates-grid>a.template-item:hover>.content .title {
 	font-size: 1rem;
 	font-weight: 500;
 }
 
-body>.app-wrapper>.app-card>.content>main>.list-templates-grid>a.template-item:hover>.content .sub-title {
+body>#app>.app-card>.content>main>.list-templates-grid>a.template-item:hover>.content .sub-title {
 	font-size: 0.9rem;
 	font-weight: 400;
 }
 
-body>.app-wrapper>.app-card>.content>main>.list-templates-grid>a.template-item:hover>.content>.info {
+body>#app>.app-card>.content>main>.list-templates-grid>a.template-item:hover>.content>.info {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 }
 
-body>.app-wrapper>.app-card>.content>footer {
+body>#app>.app-card>.content>footer {
 	position: fixed;
 	width: 80%;
 	bottom: 7.5%;
@@ -328,7 +328,7 @@ body>.app-wrapper>.app-card>.content>footer {
 	z-index: 3;
 }
 
-body>.app-wrapper>.app-card>.content>footer>* {
+body>#app>.app-card>.content>footer>* {
 	height: 60px;
 	color: #FFF;
 	display: flex;
@@ -336,26 +336,26 @@ body>.app-wrapper>.app-card>.content>footer>* {
 	font-size: 0.9rem;
 }
 
-body>.app-wrapper>.app-card>.content>footer>a {
+body>#app>.app-card>.content>footer>a {
 	text-decoration: none;
 	padding-left: 20px;
 	justify-content: start;
 	font-size: 0.8rem;
 }
 
-body>.app-wrapper>.app-card>.content>footer>a>img {
+body>#app>.app-card>.content>footer>a>img {
 	height: 22px;
 	width: 22px;
 	margin-right: 5px;
 }
 
-body>.app-wrapper>.app-card>.content>footer>a {
+body>#app>.app-card>.content>footer>a {
 	padding-left: 20px;
 	justify-content: start;
 	font-weight: bold;
 }
 
-body>.app-wrapper>.app-card>.content>footer>p {
+body>#app>.app-card>.content>footer>p {
 	padding-right: 20px;
 	justify-content: end;
 	font-size: 0.8rem;
