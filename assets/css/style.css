@@ -161,6 +161,7 @@ body>#app>.app-card>.content>header .nav-brand {
 	border-radius: 15px 15px 0 0;
 	overflow: hidden;
 	z-index: 11;
+	transition: all .15s linear;
 }
 
 body>#app>.app-card>.content>header .nav-brand>.brand {
