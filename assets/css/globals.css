@@ -35,7 +35,7 @@
 	mix-blend-mode: difference;
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
-	transition: 180ms ease-out;
+	transition: 160ms ease-out;
 	pointer-events: none;
 	z-index: 9999;
 }
@@ -53,9 +53,6 @@
 /* Page loader */
 #loader{
 	position: absolute;
-}
-
-#loader > svg {
 }
 
 /* Nav */
@@ -76,7 +73,11 @@
 	padding: auto 15px;
 }
 
-/* Bg */
+/* utilities */
 .trans {
 	background-color: #00080e;
+}
+
+.hide {
+	display: none;
 }

@@ -3,12 +3,23 @@ window.onload = function (e) {
 	const cursor = document.getElementById("cursor");
 	const aNodes = document.getElementsByTagName('A');
 
-	const content = document.getElementById('content');
-	const navBrand = document.querySelector('.nav-brand');
-	const bannerWrapper = document.querySelector('.banner-brand');
-	const navFilter = document.querySelector('.nav-filter');
+	const app = document.getElementById('app');
+	const appCard = app.querySelector('.app-card');
+	const content = app.querySelector('#content');
+
+	const navBrand = content.querySelector('.nav-brand');
+	const bannerWrapper = content.querySelector('.banner-brand');
+	const navFilter = content.querySelector('.nav-filter');
 
 	loader.style.display = 'block';
+
+	(async () => {
+		console.time("Slept for")
+		return await new Promise(resolve => setTimeout(resolve, 3000));
+	})().then(() => {
+		app.querySelector('.bg').classList.add('show');
+		loader.style.display = 'none';
+	});
 
 	function stickyElement(pageYOffset = window.pageYOffset, elToStick = Object, shrink = false) {
 		if (pageYOffset >= elToStick.offsetTop) {
@@ -56,6 +67,14 @@ window.onload = function (e) {
 			disableCursor();
 		}, 1700);
 	})
+
+	document.addEventListener("mouseenter", () => {
+		cursor.style.opacity = '1';
+	});
+
+	document.addEventListener("mouseleave", () => {
+		cursor.style.opacity = '0';
+	});
 
 	bannerWrapper.addEventListener('mouseover', () => {
 		activeCursor({ lg: true });

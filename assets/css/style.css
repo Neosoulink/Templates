@@ -27,9 +27,19 @@ body>#app {
 body>#app>.bg {
 	background-color: #013358;
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	margin: auto;
+	transition: all .9s ease-in-out;
 	z-index: -1;
+}
+
+body>#app>.bg.show {
+	width: 300vh;
+	height: 300vh;
 }
 
 body>#app>.waves-bg {
