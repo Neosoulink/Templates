@@ -14,12 +14,13 @@ window.onload = function (e) {
 	loader.style.display = 'block';
 
 	(async () => {
-		console.time("Slept for")
 		return await new Promise(resolve => setTimeout(resolve, 3000));
 	})().then(() => {
-		app.style.display = "flex";
-		app.querySelector('.bg').classList.add('show');
 		loader.style.display = 'none';
+		app.style.display = "flex";
+		setTimeout(() => {
+			app.querySelector('.bg').classList.add('show');
+		}, 100);
 	});
 
 	function stickyElement(pageYOffset = window.pageYOffset, elToStick = Object, shrink = false) {
