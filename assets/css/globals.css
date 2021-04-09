@@ -30,7 +30,7 @@
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	background: rgba(255, 255, 255, 1);
+	background: #fff;
 	mix-blend-mode: difference;
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
