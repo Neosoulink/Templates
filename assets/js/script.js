@@ -72,10 +72,6 @@ window.onload = function (e) {
 	});
 	document.addEventListener("dblclick", () => {
 		activeCursor({ lg: true })
-
-		setTimeout(() => {
-			disableCursor();
-		}, 1700);
 	})
 
 	document.addEventListener("mouseenter", () => {
