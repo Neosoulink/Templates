@@ -55,7 +55,7 @@
 	position: absolute;
 }
 
-#loader svg {
+#loader > svg {
 }
 
 /* Nav */

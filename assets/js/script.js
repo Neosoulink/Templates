@@ -8,6 +8,8 @@ window.onload = function (e) {
 	const bannerWrapper = document.querySelector('.banner-brand');
 	const navFilter = document.querySelector('.nav-filter');
 
+	loader.style.display = 'block';
+
 	function stickyElement(pageYOffset = window.pageYOffset, elToStick = Object, shrink = false) {
 		if (pageYOffset >= elToStick.offsetTop) {
 			elToStick.classList.add('sticky');
