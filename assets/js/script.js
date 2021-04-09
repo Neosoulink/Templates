@@ -17,6 +17,7 @@ window.onload = function (e) {
 		console.time("Slept for")
 		return await new Promise(resolve => setTimeout(resolve, 3000));
 	})().then(() => {
+		app.style.display = "flex";
 		app.querySelector('.bg').classList.add('show');
 		loader.style.display = 'none';
 	});
