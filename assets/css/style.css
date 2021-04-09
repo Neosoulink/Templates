@@ -108,6 +108,12 @@ body>#app>.app-card {
 	overflow: hidden;
 	border-radius: 20px;
 	box-shadow: 0 5px 20px 2px #00000099;
+	opacity: 0;
+	transition: all .9s ease-in-out;
+}
+
+body>#app>.app-card.show {
+	opacity: 1;
 }
 
 body>#app>.app-card>.mask {

@@ -53,6 +53,7 @@
 /* Page loader */
 #loader{
 	position: absolute;
+	z-index: 9998;
 }
 
 /* Nav */

@@ -4,7 +4,6 @@ window.onload = function (e) {
 	const aNodes = document.getElementsByTagName('A');
 
 	const app = document.getElementById('app');
-	const appCard = app.querySelector('.app-card');
 	const content = app.querySelector('#content');
 
 	const navBrand = content.querySelector('.nav-brand');
@@ -16,12 +15,18 @@ window.onload = function (e) {
 	(async () => {
 		return await new Promise(resolve => setTimeout(resolve, 3000));
 	})().then(() => {
-		loader.style.display = 'none';
 		app.style.display = "flex";
 		setTimeout(() => {
 			app.querySelector('.bg').classList.add('show');
 			setTimeout(() => {
 				app.querySelector('.waves-bg').classList.add('show');
+				setTimeout(() => {
+					app.querySelector('.app-card').style.display = "block";
+					setTimeout(() => {
+						app.querySelector('.app-card').classList.add("show");
+						loader.style.display = 'none';
+					}, 100);
+				}, 900);
 			}, 900);
 		}, 100);
 	});
