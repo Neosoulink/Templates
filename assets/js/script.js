@@ -20,6 +20,9 @@ window.onload = function (e) {
 		app.style.display = "flex";
 		setTimeout(() => {
 			app.querySelector('.bg').classList.add('show');
+			setTimeout(() => {
+				app.querySelector('.waves-bg').classList.add('show');
+			}, 900);
 		}, 100);
 	});
 
