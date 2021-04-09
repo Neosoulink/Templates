@@ -103,10 +103,10 @@ body>#app>.waves-bg>.waves>.parallax>use:nth-child(4) {
 
 body>#app>.app-card {
 	position: absolute;
-	height: 85%;
-	width: 80%;
+	height: 85vh;
+	width: 80vw;
 	overflow: hidden;
-	border-radius: 20px;
+	border-radius: 15px;
 	box-shadow: 0 5px 20px 2px #00000099;
 	opacity: 0;
 	transition: all .9s ease-in-out;
@@ -140,6 +140,10 @@ body>#app>.app-card>.content>header {
 	float: left;
 	width: 100%;
 	overflow: visible;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 body>#app>.app-card>.content>header a {
@@ -149,15 +153,13 @@ body>#app>.app-card>.content>header a {
 
 body>#app>.app-card>.content>header .nav-brand {
 	position: fixed;
+	top: calc(15% / 2);
 	height: 80px;
-	width: 80%;
-	overflow: hidden;
-	margin: 0;
-	padding: 0 20px;
+	width: 80vw;
+	padding-left: 22px;
 	display: flex;
-	justify-content: start;
-	align-items: center;
-	border-radius: 20px 20px 0 0;
+	border-radius: 15px 15px 0 0;
+	overflow: hidden;
 	z-index: 11;
 }
 
@@ -203,6 +205,8 @@ body>#app>.app-card>.content>header .nav-brand.shrink>.brand>h1 {
 }
 
 body>#app>.app-card>.content>header>.banner-wrapper {
+	height: 200px;
+	width: calc(100% - 30px);
 	background-image: url('../img/banner-img.png');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -211,13 +215,12 @@ body>#app>.app-card>.content>header>.banner-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 200px;
-	width: 100%;
 	margin-top: 80px;
-	text-align: center;
+	border-radius : 10px;
 }
 
 body>#app>.app-card>.content>header>.banner-wrapper>div {
+	text-align: center;
 	padding: 20px 30px;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 20px;
@@ -231,12 +234,12 @@ body>#app>.app-card>.content>header>.banner-wrapper>div h2 {
 body>#app>.app-card>.content>header>nav.nav-filter {
 	width: 100%;
 	height: 60px;
-	border-radius: 0 0 20px 20px;
+	border-radius: 0 0 15px 15px;
 }
 
 body>#app>.app-card>.content>header>nav.nav-filter.sticky {
 	position: fixed;
-	width: 80%;
+	width: 80vw;
 	top: calc(50px + 7.5%);
 	overflow: hidden;
 	box-shadow: 0 5px 80px 10px rgba(0, 0, 0, 0.2);
@@ -271,7 +274,11 @@ body>#app>.app-card>.content>header>nav.nav-filter>ul>li:hover>a {
 }
 
 body>#app>.app-card>.content>main {
-	/*min-height: 800px;*/
+	min-height: 800px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
 	padding-top: 30px;
 	padding-bottom: 60px;
 }
@@ -282,8 +289,7 @@ body>#app>.app-card>.content>main>.list-templates-grid {
 	grid-template-rows: auto;
 	gap: 10px 10px;
 	grid-template-areas: ". . .";
-	width: 100%;
-	margin: auto 10px;
+	width: calc(100% - 30px);
 }
 
 body>#app>.app-card>.content>main>.list-templates-grid>a.template-item {
@@ -341,7 +347,7 @@ body>#app>.app-card>.content>main>.list-templates-grid>a.template-item:hover>.co
 
 body>#app>.app-card>.content>footer {
 	position: fixed;
-	width: 80%;
+	width: 80vw;
 	bottom: 7.5%;
 	display: flex;
 	justify-content: space-between;
@@ -372,13 +378,13 @@ body>#app>.app-card>.content>footer>a>img {
 }
 
 body>#app>.app-card>.content>footer>a {
-	padding-left: 20px;
+	padding-left: 15px;
 	justify-content: start;
 	font-weight: bold;
 }
 
 body>#app>.app-card>.content>footer>p {
-	padding-right: 20px;
+	padding-right: 22px;
 	justify-content: end;
 	font-size: 0.8rem;
 	font-weight: 500;
