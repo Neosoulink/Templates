@@ -7,8 +7,8 @@ This project aims to present you some of my HTML templates that I realize just f
 - [X] **Demo version**
 - [ ] **Responsive design**
 - [ ] **Templates links**
-- [ ] **Spinner loading**
-- [ ] **Cursor ripple**
+- [X] **Spinner loading**
+- [X] **Cursor ripple**
 
 If you like, don't forget to leave a Start ⭐
 
