@@ -155,8 +155,9 @@ body>#app>.app-card>.content>header .nav-brand {
 	position: fixed;
 	top: calc(15% / 2);
 	height: 80px;
-	width: 80vw;
-	padding-left: 22px;
+	width: 80vw ;
+	transform: translateX(4px);
+	padding-left: 18px;
 	display: flex;
 	border-radius: 15px 15px 0 0;
 	overflow: hidden;
@@ -241,6 +242,7 @@ body>#app>.app-card>.content>header>nav.nav-filter {
 body>#app>.app-card>.content>header>nav.nav-filter.sticky {
 	position: fixed;
 	width: 80vw;
+	transform: translateX(4px);
 	top: calc(50px + 7.5%);
 	overflow: hidden;
 	box-shadow: 0 5px 80px 10px rgba(0, 0, 0, 0.2);

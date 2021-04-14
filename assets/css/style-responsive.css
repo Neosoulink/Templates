@@ -17,14 +17,11 @@
 	body>#app>.app-card>.content>header .nav-brand {
 		top: 1px;
 		transform: translateY(-1px);
-		width: calc(100vw + 8px);
-		padding-left: 22px;
 		border-radius: 0;
 	}
 
 	body>#app>.app-card>.content>header>nav.nav-filter.sticky {
 		position: fixed;
-		width: calc(100vw + 8px);
 		top: 49px;
 	}
 
