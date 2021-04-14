@@ -15,14 +15,17 @@
 	}
 
 	body>#app>.app-card>.content>header .nav-brand {
-		top: 1px;
-		transform: translateY(-1px);
+		top: 0px;
+		transform: translateX(4px);
+		width: 100vw;
 		border-radius: 0;
 	}
 
 	body>#app>.app-card>.content>header>nav.nav-filter.sticky {
 		position: fixed;
 		top: 49px;
+		transform: translateX(4px);
+		width: 100vw;
 	}
 
 	body>#app>.app-card>.content>main>.list-templates-grid {

@@ -32,7 +32,7 @@ window.onload = function (e) {
 	});
 
 	function stickyElement(pageYOffset = window.pageYOffset, elToStick = Object, shrink = false) {
-		if (pageYOffset >= elToStick.offsetTop) {
+		if (pageYOffset > elToStick.offsetTop) {
 			elToStick.classList.add('sticky');
 			elToStick.classList.add('trans');
 			if (shrink) elToStick.classList.add('shrink');
