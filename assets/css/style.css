@@ -25,7 +25,7 @@ body>#app {
 }
 
 body>#app>.bg {
-	background-color: #013358;
+	background-color: var(--primary);
 	position: absolute;
 	top: 50%;
 	width: 0;
@@ -211,7 +211,7 @@ body>#app>.app-card>.content>header>.banner-wrapper {
 	background-image: url('../img/banner-img.png');
 	background-position: center;
 	background-repeat: no-repeat;
-	background-color: #01335855;
+	background-color: var(--primary)55;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
