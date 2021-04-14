@@ -14,7 +14,7 @@ body {
 }
 
 body>#app {
-	color: white;
+	color: var(--light);
 	position: relative;
 	height: 100vh;
 	width: 100vw;
@@ -147,7 +147,7 @@ body>#app>.app-card>.content>header {
 }
 
 body>#app>.app-card>.content>header a {
-	color: white;
+	color: var(--light);
 	text-decoration: none;
 }
 
@@ -271,7 +271,7 @@ body>#app>.app-card>.content>header>nav.nav-filter>ul>li>a {
 
 body>#app>.app-card>.content>header>nav.nav-filter>ul>li.active>a,
 body>#app>.app-card>.content>header>nav.nav-filter>ul>li:hover>a {
-	border-bottom-color: white;
+	border-bottom-color: var(--light);
 }
 
 body>#app>.app-card>.content>main {

@@ -1,4 +1,21 @@
-:root{
+:root {
 	/* Colors */
-	--light: #f4f4f4,
+	--light: #f4f4f4;
+	--dark: #0a0a0a;
+
+	--primary: #013358;
+	--primary-1: #014F68;
+	--primary-2: #327794;
+	--primary-3: #7FC2E5;
+	--primary-4: #D7F5F5;
+
+	/* Opacity */
+	--op-no: 0;
+	--op-sm: 0.3;
+	--op: 0.5;
+	--op-md: 0.8;
+	--op-yes: 1;
+
+	/* Spacing */
+
 }
