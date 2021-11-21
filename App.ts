@@ -1,13 +1,21 @@
-import renderHtmlProject from "./assets/js/components/ProjectItem";
+// EVENTS
+import InitEvents from "./assets/js/InitEvents";
+
+// HELPERS
 import {
 	app,
 	loader,
 	projectsListContainer,
 } from "./assets/js/helpers/HtmlDomElementsHelper";
-import InitEvents from "./assets/js/InitEvents";
+
+// COMPONENTS
+import renderHtmlProject from "./assets/js/components/ProjectItem";
 
 // API
 import ProjectsList from "./web/rootList.json";
+
+// STYLES
+import "./assets/css/index.css";
 
 window.onload = function () {
 	loader.style.display = "block";
