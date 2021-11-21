@@ -4,7 +4,7 @@ export default ({
 	img = String,
 	href = "#",
 }) => {
-	return `<a href="${href}" class="template-item" target="_Blank>
+	return `<a href="${href}" class="template-item" target="_Blank" >
 		<div class="img" loading="lazy" style="background-image: url('${img}')" ></div>
 		<div class="content">
 			<div class="description">
