@@ -25,9 +25,9 @@ window.onload = function (e) {
 		ProjectsList.forEach((item) => {
 			projectsListContainer.innerHTML += renderHtmlProject({
 				label: item.name,
-				description: "desc",
+				description: item.description ? item.description : "",
 				img: "./web/" + item.foldername + "/" + item.screenshot,
-				href: "./web/" + item.foldername,
+				href: "./web/" + item.foldername + "/" + item.indexfile,
 			});
 		});
 

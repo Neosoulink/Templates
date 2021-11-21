@@ -1,11 +1,13 @@
 [
 	{
 		"foldername" : "avocats_vionnaires",
+		"indexfile" : "index.html",
 		"name": "avocat visionaire",
 		"screenshot": "images/screenshot.png"
 	},
 	{
 		"foldername": "mineco",
+		"indexfile": "index.html",
 		"name": "Min. Eco",
 		"screenshot": "images/screenshot.png"
 	}
