@@ -2,8 +2,9 @@
 	"name": "templates-gallery",
 	"version": "0.0.0",
 	"scripts": {
+		"cpWeb": "cp -r ./web  ./dist",
 		"dev": "vite",
-		"build": "tsc && vite build",
+		"build": "tsc && vite build && npm run cpWeb",
 		"serve": "vite preview"
 	},
 	"devDependencies": {
