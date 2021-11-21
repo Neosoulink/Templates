@@ -6,16 +6,18 @@ import {
 } from "./assets/js/helpers/HtmlDomElementsHelper";
 import InitEvents from "./assets/js/InitEvents";
 
+// API
+import ProjectsList from "./web/rootList.json";
+
 window.onload = function (e) {
 	loader.style.display = "block";
 
 	const Promises = [];
 	Promises.push(fetch("./assets/svg/dashboard.svg"));
 	Promises.push(fetch("./assets/img/bg-waves.jpg"));
-	Promises.push(fetch("./web/projectLis.json"));
 
 	Promise.all(Promises).then((data) => {
-		console.log(data);
+		console.log(data, ProjectsList);
 
 		app.style.display = "flex";
 
@@ -24,7 +26,6 @@ window.onload = function (e) {
 			description: "desc",
 			src: data[1].url,
 		});
-
 
 		setTimeout(() => {
 			app.querySelector(".bg").classList.add("show");
