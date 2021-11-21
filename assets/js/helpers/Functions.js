@@ -30,14 +30,3 @@ export function disableCursor() {
 	cursor.classList.remove("active");
 	cursor.classList.remove("active-lg");
 }
-
-export function applyEventsToLinks() {
-	for (let i = 0; i < aNodes.length; i++) {
-		aNodes[i].addEventListener("mouseover", () => {
-			activeCursor({ def: true });
-		});
-		aNodes[i].addEventListener("mouseleave", () => {
-			disableCursor();
-		});
-	}
-}

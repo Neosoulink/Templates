@@ -1,5 +1,4 @@
 import renderHtmlProject from "./components/ProjectItem";
-import { applyEventsToLinks } from "./helpers/Functions";
 import {
 	app,
 	loader,
@@ -25,7 +24,6 @@ window.onload = function (e) {
 			src: data[1].url,
 		});
 
-		applyEventsToLinks();
 
 		setTimeout(() => {
 			app.querySelector(".bg").classList.add("show");

@@ -4,6 +4,7 @@ import {
 	navBrand,
 	navFilter,
 	bannerWrapper,
+	aNodes,
 } from "./helpers/HtmlDomElementsHelper";
 import {
 	activeCursor,
@@ -39,7 +40,17 @@ export default () => {
 	bannerWrapper.addEventListener("mouseover", () => {
 		activeCursor({ lg: true });
 	});
+
 	bannerWrapper.addEventListener("mouseleave", () => {
 		disableCursor();
 	});
+
+	for (let i = 0; i < aNodes.length; i++) {
+		aNodes[i].addEventListener("mouseover", () => {
+			activeCursor({ def: true });
+		});
+		aNodes[i].addEventListener("mouseleave", () => {
+			disableCursor();
+		});
+	}
 };
