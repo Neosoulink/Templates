@@ -10,6 +10,7 @@ import {
 	activeCursor,
 	customizeCursorMovement,
 	disableCursor,
+	stickyElement,
 } from "./helpers/Functions";
 
 export default () => {
