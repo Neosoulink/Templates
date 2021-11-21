@@ -25,20 +25,23 @@ window.onload = function (e) {
 		ProjectsList.forEach((item) => {
 			projectsListContainer.innerHTML += renderHtmlProject({
 				label: item.name,
-				description: item.description ? item.description : "",
+				description: item?.description,
 				img: "./web/" + item.foldername + "/" + item.screenshot,
 				href: "./web/" + item.foldername + "/" + item.indexfile,
 			});
 		});
 
 		setTimeout(() => {
-			app.querySelector(".bg").classList.add("show");
+			app.querySelector(".bg")?.classList.add("show");
 			setTimeout(() => {
-				app.querySelector(".waves-bg").classList.add("show");
+				app.querySelector(".waves-bg")?.classList.add("show");
 				setTimeout(() => {
-					app.querySelector(".app-card").style.display = "block";
+					const AppCard: HTMLDivElement = app.querySelector(
+						".app-card"
+					) as HTMLDivElement;
+					AppCard.style.display = "block";
 					setTimeout(() => {
-						app.querySelector(".app-card").classList.add("show");
+						AppCard.classList.add("show");
 						loader.style.display = "none";
 					}, 100);
 				}, 900);
