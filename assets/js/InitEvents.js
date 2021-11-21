@@ -20,6 +20,7 @@ export default () => {
 	});
 
 	document.addEventListener("mousemove", customizeCursorMovement);
+
 	document.addEventListener("mousedown", () => {
 		activeCursor({ def: true });
 	});
