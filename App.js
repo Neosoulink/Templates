@@ -1,10 +1,10 @@
-import renderHtmlProject from "./components/ProjectItem";
+import renderHtmlProject from "./assets/js/components/ProjectItem";
 import {
 	app,
 	loader,
 	projectsListContainer,
-} from "./helpers/HtmlDomElementsHelper";
-import InitEvents from "./InitEvents";
+} from "./assets/js/helpers/HtmlDomElementsHelper";
+import InitEvents from "./assets/js/InitEvents";
 
 window.onload = function (e) {
 	loader.style.display = "block";
@@ -12,6 +12,7 @@ window.onload = function (e) {
 	const Promises = [];
 	Promises.push(fetch("./assets/svg/dashboard.svg"));
 	Promises.push(fetch("./assets/img/bg-waves.jpg"));
+	Promises.push(fetch("./web/projectLis.json"));
 
 	Promise.all(Promises).then((data) => {
 		console.log(data);
