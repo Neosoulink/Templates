@@ -9,7 +9,7 @@ import InitEvents from "./assets/js/InitEvents";
 // API
 import ProjectsList from "./web/rootList.json";
 
-window.onload = function (e) {
+window.onload = function () {
 	loader.style.display = "block";
 
 	const Promises = [];
