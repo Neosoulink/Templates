@@ -1,6 +1,10 @@
 import renderHtmlProject from "./components/ProjectItem";
-import { applyEventsToLinks } from "./Helpers";
-import { app, loader, projectsListContainer } from "./HtmlDomElementsHelper";
+import { applyEventsToLinks } from "./helpers/Functions";
+import {
+	app,
+	loader,
+	projectsListContainer,
+} from "./helpers/HtmlDomElementsHelper";
 import InitEvents from "./InitEvents";
 
 window.onload = function (e) {

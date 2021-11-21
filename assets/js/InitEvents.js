@@ -1,5 +1,15 @@
-import { cursor, content, navBrand, navFilter, bannerWrapper } from "./HtmlDomElementsHelper";
-import { activeCursor, customizeCursorMovement, disableCursor } from "./Helpers";
+import {
+	cursor,
+	content,
+	navBrand,
+	navFilter,
+	bannerWrapper,
+} from "./helpers/HtmlDomElementsHelper";
+import {
+	activeCursor,
+	customizeCursorMovement,
+	disableCursor,
+} from "./helpers/Functions";
 
 export default () => {
 	content.addEventListener("scroll", () => {
