@@ -21,10 +21,14 @@ window.onload = function (e) {
 
 		app.style.display = "flex";
 
-		projectsListContainer.innerHTML = renderHtmlProject({
-			label: "Name",
-			description: "desc",
-			src: data[1].url,
+		projectsListContainer.innerHTML = "";
+		ProjectsList.forEach((item) => {
+			projectsListContainer.innerHTML += renderHtmlProject({
+				label: item.name,
+				description: "desc",
+				img: "./web/" + item.foldername + "/" + item.screenshot,
+				href: "./web/" + item.foldername,
+			});
 		});
 
 		setTimeout(() => {

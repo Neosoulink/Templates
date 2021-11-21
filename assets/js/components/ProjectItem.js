@@ -1,10 +1,11 @@
 export default ({
 	label = String,
 	description = String,
-	src = String
+	img = String,
+	href = "#",
 }) => {
-	return `<a href="#" class="template-item">
-		<img loading="lazy" src="${src}" />
+	return `<a href="${href}" class="template-item">
+		<img loading="lazy" src="${img}" />
 		<div class="content">
 			<div class="description">
 				<h3 class="title">${label}</h3>

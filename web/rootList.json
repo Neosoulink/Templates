@@ -1,0 +1,12 @@
+[
+	{
+		"foldername" : "avocats_vionnaires",
+		"name": "avocat visionaire",
+		"screenshot": "images/screenshot.png"
+	},
+	{
+		"foldername": "mineco",
+		"name": "Min. Eco",
+		"screenshot": "images/screenshot.png"
+	}
+]
