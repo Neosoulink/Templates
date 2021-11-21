@@ -1,45 +1,64 @@
+import renderHtmlProject from "./renderHtmlProject";
+
 window.onload = function (e) {
 	const loader = document.getElementById("loader");
 	const cursor = document.getElementById("cursor");
-	const aNodes = document.getElementsByTagName('A');
+	const aNodes = document.getElementsByTagName("A");
 
-	const app = document.getElementById('app');
-	const content = app.querySelector('#content');
+	const app = document.getElementById("app");
+	const content = app.querySelector("#content");
 
-	const navBrand = content.querySelector('.nav-brand');
-	const bannerWrapper = content.querySelector('.banner-brand');
-	const navFilter = content.querySelector('.nav-filter');
+	const navBrand = content.querySelector(".nav-brand");
+	const bannerWrapper = content.querySelector(".banner-brand");
+	const navFilter = content.querySelector(".nav-filter");
 
-	loader.style.display = 'block';
+	const projectsListContainer = document.getElementById("projects-list");
 
-	(async () => {
-		return await new Promise(resolve => setTimeout(resolve, 3000));
-	})().then(() => {
+	loader.style.display = "block";
+
+	const Promises = [];
+	Promises.push(fetch("./assets/svg/dashboard.svg"));
+	Promises.push(fetch("./assets/img/bg-waves.jpg"));
+
+	Promise.all(Promises).then((data) => {
+		console.log(data);
+
 		app.style.display = "flex";
+
+		projectsListContainer.innerHTML = renderHtmlProject({
+			label: "Name",
+			description: "desc",
+			src: data[1].url,
+		});
+
 		setTimeout(() => {
-			app.querySelector('.bg').classList.add('show');
+			app.querySelector(".bg").classList.add("show");
 			setTimeout(() => {
-				app.querySelector('.waves-bg').classList.add('show');
+				app.querySelector(".waves-bg").classList.add("show");
 				setTimeout(() => {
-					app.querySelector('.app-card').style.display = "block";
+					app.querySelector(".app-card").style.display = "block";
 					setTimeout(() => {
-						app.querySelector('.app-card').classList.add("show");
-						loader.style.display = 'none';
+						app.querySelector(".app-card").classList.add("show");
+						loader.style.display = "none";
 					}, 100);
 				}, 900);
 			}, 900);
 		}, 100);
 	});
 
-	function stickyElement(pageYOffset = window.pageYOffset, elToStick = Object, shrink = false) {
+	function stickyElement(
+		pageYOffset = window.pageYOffset,
+		elToStick = Object,
+		shrink = false
+	) {
 		if (pageYOffset > elToStick.offsetTop) {
-			elToStick.classList.add('sticky');
-			elToStick.classList.add('trans');
-			if (shrink) elToStick.classList.add('shrink');
+			elToStick.classList.add("sticky");
+			elToStick.classList.add("trans");
+			if (shrink) elToStick.classList.add("shrink");
 		} else {
-			elToStick.classList.remove('sticky');
-			elToStick.classList.remove('trans');
-			if (shrink) elToStick.classList.remove('shrink');
+			elToStick.classList.remove("sticky");
+			elToStick.classList.remove("trans");
+			if (shrink) elToStick.classList.remove("shrink");
 		}
 	}
 
@@ -49,16 +68,16 @@ window.onload = function (e) {
 	}
 
 	function activeCursor({ def = true, lg = false }) {
-		if (def) cursor.classList.add('active');
-		if (lg) cursor.classList.add('active-lg');
+		if (def) cursor.classList.add("active");
+		if (lg) cursor.classList.add("active-lg");
 	}
 
 	function disableCursor() {
-		cursor.classList.remove('active');
-		cursor.classList.remove('active-lg');
+		cursor.classList.remove("active");
+		cursor.classList.remove("active-lg");
 	}
 
-	content.addEventListener('scroll', () => {
+	content.addEventListener("scroll", () => {
 		stickyElement(content.scrollTop, navBrand, true);
 		stickyElement(content.scrollTop, navFilter);
 	});
@@ -68,33 +87,33 @@ window.onload = function (e) {
 		activeCursor({ def: true });
 	});
 	document.addEventListener("mouseup", () => {
-		disableCursor()
+		disableCursor();
 	});
 	document.addEventListener("dblclick", () => {
-		activeCursor({ lg: true })
-	})
+		activeCursor({ lg: true });
+	});
 
 	document.addEventListener("mouseenter", () => {
-		cursor.style.opacity = '1';
+		cursor.style.opacity = "1";
 	});
 
 	document.addEventListener("mouseleave", () => {
-		cursor.style.opacity = '0';
+		cursor.style.opacity = "0";
 	});
 
-	bannerWrapper.addEventListener('mouseover', () => {
+	bannerWrapper.addEventListener("mouseover", () => {
 		activeCursor({ lg: true });
 	});
-	bannerWrapper.addEventListener('mouseleave', () => {
+	bannerWrapper.addEventListener("mouseleave", () => {
 		disableCursor();
 	});
 
 	for (let i = 0; i < aNodes.length; i++) {
-		aNodes[i].addEventListener('mouseover', () => {
+		aNodes[i].addEventListener("mouseover", () => {
 			activeCursor({ def: true });
 		});
-		aNodes[i].addEventListener('mouseleave', () => {
+		aNodes[i].addEventListener("mouseleave", () => {
 			disableCursor();
 		});
 	}
-}
+};
