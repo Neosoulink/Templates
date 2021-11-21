@@ -277,7 +277,6 @@ body>#app>.app-card>.content>header>nav.nav-filter>ul>li:hover>a {
 }
 
 body>#app>.app-card>.content>main {
-	min-height: 800px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -392,6 +391,7 @@ body>#app>.app-card>.content>footer>a {
 body>#app>.app-card>.content>footer>p {
 	padding-right: 22px;
 	justify-content: end;
+	text-align: right;
 	font-size: 0.8rem;
 	font-weight: 500;
 }

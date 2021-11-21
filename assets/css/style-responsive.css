@@ -12,6 +12,7 @@
 		width: 100vw;
 		border-radius: 0;
 		box-shadow: none;
+		margin-bottom: -1px;
 	}
 
 	body>#app>.app-card>.content>header .nav-brand {
@@ -31,5 +32,11 @@
 	body>#app>.app-card>.content>main>.list-templates-grid {
 		grid-template-columns: 1fr;
 		grid-template-areas: ".";
+	}
+
+	body>#app>.app-card>.content>footer {
+		width: 100vw;
+		bottom: 0%;
+		font-size: 14px;
 	}
 }
