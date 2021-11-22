@@ -5,8 +5,8 @@ This project aims to present you some of my HTML templates that I realize just f
 ## 📋 To do
 
 - [X] **Demo version**
-- [ ] **Responsive design**
-- [ ] **Templates links**
+- [X] **Responsive design**
+- [X] **Templates links**
 - [X] **Spinner loading**
 - [X] **Cursor ripple**
 
