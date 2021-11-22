@@ -3,9 +3,10 @@
 	"version": "0.0.0",
 	"scripts": {
 		"cpWeb": "cp -r ./web ./dist",
-		"cpAssets": "cp -r ./assets/{img,svg}  ./dist/assets",
+		"cpImg": "cp -r ./assets/img  ./dist/assets",
+		"cpSvg": "cp -r ./assets/svg  ./dist/assets",
 		"dev": "vite",
-		"build": "tsc && vite build && npm run cpWeb && npm run cpAssets",
+		"build": "tsc && vite build && npm run cpWeb && npm run cpImg && npm run cpSvg",
 		"serve": "vite preview"
 	},
 	"devDependencies": {
