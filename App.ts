@@ -1,15 +1,15 @@
 // EVENTS
-import InitEvents from "./assets/js/InitEvents";
+import InitEvents from "./assets/ts/InitEvents";
 
 // HELPERS
 import {
 	app,
 	loader,
 	projectsListContainer,
-} from "./assets/js/helpers/HtmlDomElementsHelper";
+} from "./assets/ts/helpers/HtmlDomElementsHelper";
 
 // COMPONENTS
-import renderHtmlProject from "./assets/js/components/ProjectItem";
+import renderHtmlProject from "./assets/ts/components/ProjectItem";
 
 // API
 import ProjectsList from "./web/rootList.json";
