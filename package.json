@@ -2,9 +2,10 @@
 	"name": "templates-gallery",
 	"version": "0.0.0",
 	"scripts": {
-		"cpWeb": "cp -r ./web  ./dist",
+		"cpWeb": "cp -r ./web ./dist",
+		"cpAssets": "cp -r ./assets/{img,svg}  ./dist/assets",
 		"dev": "vite",
-		"build": "tsc && vite build && npm run cpWeb",
+		"build": "tsc && vite build && npm run cpWeb && npm run cpAssets",
 		"serve": "vite preview"
 	},
 	"devDependencies": {
